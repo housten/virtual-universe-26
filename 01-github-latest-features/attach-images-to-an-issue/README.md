@@ -60,7 +60,7 @@ The text after `#` is the image's alt text.
 url=$(gh issue create \
   --title "Menu prices show \$NaN" \
   --body "Playwright caught this:" \
-  --attach 'menu-prices.png#Menu board showing $NaN') &&
+  --attach './menu-prices.png#Menu board showing $NaN') &&
 printf '\n\033[1mYour issue: %s\033[0m\n\n' "$url"
 ```
 
